@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  background: #222;
+  padding: 20px 50px;
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 30px 5px #333232;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+header a:hover {
+  color: #a1a1a1;
+}
+
+header a.text {
+  color: #eee;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+
+header a.text:hover {
+  text-decoration: underline;
+}
+
+header nav a {
+  color: #eee;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+
+header nav a.btn {
+  padding: 5px;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+header nav a.btn:hover {
+  border-color: #e6bc49;
+}
+
+main {
+  float: left;
+  margin-top: 100px;
+  margin-left: 350px;
+  width: 35%;
+}
+
+main .row {
+  width: 100%;
+  height: 70px;
+  background: #ffc007;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px 30px 20px 30px;
+  box-sizing: border-box;
+  line-height: 150%;
+}
+
+main button.del_user {
+  float: right;
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background: #dd4848;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  bottom: 11px;
+  transition: background 500ms ease;
+}
+
+main button.del_user:hover {
+  background: #a51717;
+}
+
+form {
+  margin: 30px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  width: 85%;
+  cursor: pointer;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  resize: none;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form textarea.main_text {
+  height: 300px;
+}
+
+form button {
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #fec008;
+  color: #42410c;
+  transition: transform 500ms ease;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+form.form_comment {
+  margin-top: 20px;
+}
+
+form.form_comment input {
+  border-radius: 10px 10px 0 0;
+  width: 30%;
+}
+
+form.form_comment textarea {
+  border-radius: 0 0 10px 10px;
+}
+
+form button:hover,
+.post a:hover {
+  transform: scale(1.1);
+}
+
+.error-mess {
+  color: #de7474;
+  margin-top: 10px;
+  font-weight: 600;
+  display: none;
+}
+
+aside {
+  float: right;
+  margin-top: 100px;
+  margin-right: 350px;
+  width: 380px;
+}
+
+aside .info {
+  background: #ffc007;
+  color: #42410c;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 150%;
+  border-radius: 5px;
+}
+
+aside .info h2 {
+  margin-bottom: 10px;
+}
+
+aside img {
+  width: 85%;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 28.5px;
+}
+
+aside .chat,
+aside form {
+  margin-top: 40px;
+}
+
+aside .chat h1 {
+  margin-bottom: 25px;
+}
+
+aside .first_mess {
+  width: 100%;
+  padding: 17px 30px;
+  color: #796730;
+  background: #ecdeb2;
+  box-sizing: border-box;
+  border: 1px solid #e9d698;
+  border-radius: 5px;
+}
+
+aside .chat_mess {
+  width: 100%;
+  padding: 17px 30px;
+  margin-bottom: 15px;
+  color: #25565e;
+  background: #b7e1f7;
+  box-sizing: border-box;
+  border: 1px solid #9bd4f3;
+  border-radius: 5px;
+}
+
+button#send_chatMess {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #36b91c;
+  color: #fff;
+  font-size: 16px;
+}
+
+.post {
+  margin-bottom: 50px;
+}
+
+.post h1 {
+  margin-bottom: 10px;
+}
+
+.post p {
+  line-height: 1.5;
+}
+
+.post .author {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.post .author span {
+  background: #ccac4a;
+  padding: 2px 7px;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
+.post a {
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #ffc007;
+  color: #42410c;
+  transition: transform 500ms ease;
+}
+
+hr {
+  margin-bottom: 30px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+.comment {
+  width: 100%;
+  background: #ffc007;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #dba709;
+  border-radius: 0 10px 10px;
+  color: #42410c;
+  margin-bottom: 30px;
+}
+
+.comments h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  background: #222;
+  padding: 30px 300px;
+  color: #fff;
+  margin-top: 100px;
+}
